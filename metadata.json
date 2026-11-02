@@ -1,0 +1,6 @@
+{
+  "name": "Precision & ColdEx Logistics Suite",
+  "description": "Enterprise parcel tracking, handheld delivery verification, and cryogenic cold-chain fleet telemetry platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
