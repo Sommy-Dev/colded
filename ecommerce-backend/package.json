@@ -11,5 +11,12 @@
   "keywords": ["ecommerce", "supabase", "nodejs"],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "@supabase/supabase-js": "^2.45.0",
+    "zod": "^3.24.1"
+  }
 }
