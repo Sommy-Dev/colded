@@ -1,0 +1,22 @@
+services:
+  - name: ecommerce-backend
+    type: web
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        fromSupabase: true
+      - key: SUPABASE_ANON_KEY
+        fromSupabase: true
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        fromSupabase: true
+    healthCheck:
+      path: /api/health
+      interval: 30
+      retries: 5
+      timeout: 10
